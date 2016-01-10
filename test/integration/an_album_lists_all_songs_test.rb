@@ -14,7 +14,6 @@ class AnAlbumListsAllSongsTest < ActionDispatch::IntegrationTest
     song_9 = Song.create(name: "Let's Get Lost", album_id: album.id)
 
     visit album_path(album)
-    save_and_open_page
 
     assert page.has_content?("Run Away With Me")
     assert page.has_content?("I Really Like You")
