@@ -1,6 +1,3 @@
 <h1> Albums Index </h1>
-<ul>
-<% @albums.each do |album| %>
-  <li> <%= album.year %> - <%= album.name %>
-<% end %>
-</ul>
+<%= link_to "Add New Album", new_album_path %>
+<%= render 'albums' %>

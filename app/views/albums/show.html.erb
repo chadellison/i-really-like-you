@@ -1,7 +1,7 @@
 <%= @album.name%>
 <ul>
   <% @album.songs.each do |song| %>
-    <li> <%= song.name %> </li>
+    <li> <%= song.track %> - <%= song.name %> </li>
   <% end %>
 </ul>
 
