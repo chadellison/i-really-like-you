@@ -1,6 +1,6 @@
 
 <ul>
 <% @albums.each do |album| %>
-  <li> <%= album.year %> - <%= album.name %>
+  <li> <%= album.year %> - <%= album.name %> <%= link_to "Edit", edit_album_path(album) %>
 <% end %>
 </ul>
