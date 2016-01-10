@@ -1,0 +1,7 @@
+<%= Album.find(params[:id]).name %>
+<ul>
+  <% Album.find(params[:id]).songs.each do |song| %>
+    <li> <%= song.name %> </li>
+  <% end %>
+</ul>
+
