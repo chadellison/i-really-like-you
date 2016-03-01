@@ -1,6 +1,6 @@
 <h1> Albums Index </h1>
 <ul>
-<% Album.all.each do |album| %>
+<% @albums.each do |album| %>
   <li> <%= album.year %> - <%= album.name %>
 <% end %>
 </ul>
