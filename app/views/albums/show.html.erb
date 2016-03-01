@@ -1,7 +1,9 @@
 <%= @album.name %>
+
+<%= render partial: "shared/_side_menu" %>
+
 <ul>
   <% @album.songs.each do |song| %>
     <li> <%= song.name %> </li>
   <% end %>
 </ul>
-

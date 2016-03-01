@@ -1,4 +1,7 @@
 <h1> Albums Index </h1>
+
+<%= render partial: "shared/side_menu" %>
+
 <%= link_to "Create Album",  new_album_path %>
 <ul>
 <% @albums.each do |album| %>
